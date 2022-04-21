@@ -66,6 +66,12 @@ nav a:hover{
     margin: auto;  
     overflow: hidden;
 }
+.secciones3{
+    width:100%;
+    max-width: 1150px;
+    margin: auto;  
+    overflow: hidden;
+}
 
 
 /* INICIO */
@@ -78,20 +84,24 @@ body{
     color:black;
     font-family: 'Montserrat', sans-serif;
 }
-main{
-    height: calc(100vh - 110px);
+.inicio{
+    height: 620px;
     width: 100%;
     background-image: url(./multimedia/baseball1.jpg);
     background-size: cover;
+    padding-top: 25px;
 }
 .bannerini{
-    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
     width: 40%;
     color: white;
     background-color: rgba(0, 0, 0, 0.353);
     padding: 30px;
-    margin: 75px 200px 0px 200px;
+    margin: 50px 200px 0px 200px;
     text-align: justify;
     letter-spacing: 1px;
 }
@@ -101,13 +111,14 @@ main{
 .bannerini h1{
     margin-bottom: 20px;
 }
-.bannerini a {
+.botonini1{
     color: white;
     text-decoration: none;
     background-color: #C8102E;
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
+    margin-left: 220px;
 }
 .tituloini1{
     color: black;
@@ -132,7 +143,7 @@ main{
 .texsec1 p{
     margin-bottom: 30px;
 }
-.texsec1 a{
+.texsec1 button{
     color: black;
     text-decoration: none;
     background-color: white;
@@ -144,6 +155,7 @@ main{
 .fotosec2{
     background-image: url(./multimedia/football.jpg);
     background-size: cover;
+    padding-bottom: 50px;
 }
 .tituloini2{
     color: white;
@@ -158,16 +170,19 @@ main{
     margin-bottom: 30px;
     margin-top: -100px;
 }
-.episodios a{
+.botonini3{
     display: flex;
     color: white;
     text-decoration: none;
     background-color: #C8102E;
     padding: 5px 20px;
     font-size: 18px;
-    justify-content: center;
-    margin: 0px 510px;
     font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fotosec2 a{
+    text-decoration: none;
 }
 .youtube1{
     margin-top: 200px;
@@ -193,17 +208,20 @@ main{
     flex-direction: row;
     margin-bottom: 30px;
 }
-.videos a{
+.videos button{
     display: flex;
     color: black;
     text-decoration: none;
     background-color: white;
     padding: 5px 20px;
     font-size: 18px;
-    justify-content: center;
-    margin: 0px 500px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid black;
     font-weight: 700;
+}
+.videos a{
+    text-decoration: none;
 }
 
 
@@ -218,7 +236,7 @@ footer{
     padding-bottom: 30px;
 }
 footer i{
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 15px;
     color: white;
 }
@@ -247,31 +265,39 @@ footer i{
 .pie1{
     padding-top: 30px;
     text-align: left;
+    text-transform: uppercase;
 }
 .pie1 h2{
     color: white;
+    font-size: 15px;
 }
 .pie1 a{
     color: white;
     text-decoration: none;
+    font-size: 15px;
 }
 .pie1 a:hover{
     text-decoration: underline;
 }
 .logo2{
     height: 150px;
-    margin-left:10%;
+    margin-left:-50%;
     padding-top: 30px;
 }
 .rrsspie{
-    padding-top: 30px;
-    line-height: 50px;
+    padding-top: 10px;
+    line-height: 40px;
 }
 .rrsspie a{
     color: white;
 }
+.rrsspie a:hover{
+    color: #C8102E;
+}
 .rrsspie h2{
     color: white;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 /* ABOUT ME*/
@@ -287,29 +313,56 @@ footer i{
     text-align: center;
     padding: 250px 0px 200px 0px;
 }
-.imgabout{
-    height: 400px;
-    width: 400px;
-    margin: 0px 25px 25px 125px;
-    padding: 25px 0px 25px 50px;
-}
 .h3about1{
-    margin: 50px 25px 15px 175px;
     font-size: 35px;
 }
 .h2about1{
-    margin: 0px 25px 25px 175px;
     font-size: 40px;
+    padding-bottom: 20px;
 }
-.textoabout{
-    float: right;
-    height: auto;
-    width: 40%;
-    margin: 20px 200px 0px 0px
-}
-.h2about1 .textoabout{
+.about1{
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgabout{
+    width: 30%;
+}
+.about1 .textoabout{
+    width: 48%;
+    text-align: justify;
+}
+.galeriabout{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.mlbabout{
+    height: 400px;
+    width: 300px;
+}
+.nflabout {
+    height: 400px;
+    width: 300px;
+}
+.f1about {
+    height: 425px;
+    width: 325px;
+}
+.secabout1 button{
+    display: flex;
+    color: white;
+    background-color: #C8102E;
+    padding: 5px 20px;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.secabout1 a{
+    text-decoration: none;
+    color: white;
 }
 #suscripcion{
     background-color: #C8102E;
@@ -329,27 +382,393 @@ footer i{
     text-align: center;
     padding: 50px 0px 50px 0px;
 }
-.tiktok{
-    margin: 0px 0px 50px 180px;
+.secvideos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: -125px;
+}
+.secvideos2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: -125px;
+}
+.secvideos3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: -125px;
+}
+.tiktok1{
+    margin-top: 250px;
+}
+.tiktok3{
+    margin-top: 150px;
 }
 
 /* EPISODIOS */
 
 #episodios{
-    background-image: url(./multimedia/Tenis2.jpg);
+    background-image: url(./multimedia/tenis.jpg);
     height: calc(100vh - 110px);
-    width: 100%;
-    background-size: cover;
-
+    background-position: 50%;
 }
+
 .bannerepisodios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: white;
+    padding: 250px 0px 200px 0px;
     text-align: center;
-    padding: 250px 0px 275px 0px;
+}
+#episodios h1{
     background-color: rgba(0, 0, 0, 0.34);
 }
-#episodios2{
+#episodios h2{
+    background-color: rgba(0, 0, 0, 0.34);
+}
+.episodios2{
     background-color: #C8102E;
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 200px 30px 200px;
+    line-height: 25px;
 }
+.epyoutube {
+    margin-top: 30px;
+    border: white solid 2px;
+}
+.eph2{
+    padding-bottom: 10px;
+    color: white;
+}
+.ph2{
+    color: white;
+}
+
+/*RESPONSIVE*/
+/*INICIO*/
+@media screen and (max-width: 1400px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+    .bannerini{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 60%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 20px;
+    }
+    nav{
+        margin: auto;
+    }
+    .rrssmenu{
+        margin: auto;
+    }
+    .logo1{
+        margin: auto;
+        height: 80px;
+    }
+    
+    .inicio{
+        height: 450px;
+        width: 100%;
+        padding-top: 5px;
+}
+    .bannerini{
+        padding: 15px;
+        margin: 15px 100px 0px 200px;
+        letter-spacing: 1px;
+        font-size: 15px;
+}
+    .videosini1{
+        visibility: hidden;
+    }
+    .secabout1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .episodios2{
+        padding: 20px 20px;
+    }
+    .bannerepisodios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+    #episodios h2{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .seccion2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .bannerini{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: 80%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.353);
+        padding: 20px;
+        text-align: justify;
+        letter-spacing: 1px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .youtube1 {
+        margin-top: 70px;
+    }
+    .youtube2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .botonini1{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inicio a{
+        text-decoration: none;
+    }
+    .about1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+    }
+    .textoabout{
+        margin-top: 30px;
+    }
+    .mlbabout{
+        height: 300px;
+        width: 200px;
+    }
+    .f1about{
+        height: 350px;
+        width: 250px;
+    }
+    .nflabout{
+        height: 300px;
+        width: 200px;
+    }
+    .galeriabout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .bannerini{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 60%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 20px;
+}
+    .inicio a{
+        text-decoration: none;
+    }
+    .bannerini p{
+        font-size: 20px;
+    }
+    .bannerini h1{
+        font-size: 30px;
+    }
+    .inicio{
+        height: 450px;
+}
+}
+@media screen and (max-width: 899px){
+    .bannerini p{
+        font-size: 14px;
+    }
+    .inicio button{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .bannerini{
+        width: 90%;
+    }
+    nav li{
+        font-size: 15px;
+        margin: auto;
+    }
+    .rrssmenu{
+        font-size: 15px;
+        margin: auto;
+    }
+    .logo1{
+        margin: auto;
+        height: 70px;
+    }
+    .inicio{
+        height: 350px;
+    }
+    #seccionpie h2{
+        font-size: 12px;
+    }
+    #seccionpie a{
+        font-size: 10px;
+    }
+    .logo2{
+        height: 100px;
+    }
+    .episodios2 iframe{
+        height: 250px;
+        width: 400px;
+    }
+    .eph2{
+        font-size: 20px;
+    }
+    .ph2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px){
+    nav li{
+        font-size: 12px;
+    }
+    .bannerini p{
+            font-size: 12px;
+        }
+    .inicio button{
+        text-decoration: none;
+        font-size: 12px;
+        }
+    .sec1{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        padding: auto;
+    }
+    .texsec1{
+        padding-top: 20px;
+    }
+    .texsec1 p{
+        margin: 20px -20px;
+    }
+    .texsec1 button{
+        font-size: 12px;
+    }
+    .tituloini1{
+        font-size: 30px;
+    }
+    .tituloini2{
+        font-size: 30px;
+    }
+    .botonini3{
+        font-size: 12px;
+    }
+    .tituloini3{
+        font-size: 30px;
+    }
+    .tituloini3-1{
+        font-size: 20px;
+    }
+    #episodios h2{
+        font-size: 30px;
+    }
+    #episodios h2{
+        font-size: 20px;
+    }
+    #episodios h1{
+        font-size: 30px;
+    }
+    }
+    @media screen and (max-width: 650px){
+        .inicio{
+            height: 500px;
+        }
+        .h3about1{
+            font-size: 20px;
+        }
+        .h2about1{
+            font-size: 30px;
+        }
+        .galeriabout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .mlbabout{
+            height: 350px;
+            width: 250px;
+            margin: 20px 20px;
+        }
+        .f1about{
+            height: 350px;
+            width: 250px;
+            margin: 20px 20px;
+        }
+        .nflabout{
+            height: 350px;
+            width: 250px;
+            margin: 20px 20px;
+        }
+        .secabout1 button{
+            font-size: 15px;
+        }
+        #about {
+            background-size: center;
+        }
+        #about h1{
+            font-size: 30px;
+        }
+        .textoabout p{
+            font-size: 15px;
+        }
+        .imgabout{
+            height: 300px;
+            width: 300px;
+        }
+        .episodios2 iframe{
+            height: 170px;
+            width: 300px;
+        }
+
+    }
+
