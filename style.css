@@ -413,7 +413,7 @@ footer i{
 /* EPISODIOS */
 
 #episodios{
-    background-image: url(./multimedia/tenis.jpg);
+    background-image: url(../multimedia/tenis.jpg);
     height: calc(100vh - 110px);
     background-position: 50%;
 }
