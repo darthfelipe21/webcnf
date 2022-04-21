@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav ul li a{
+    color: white;
+    font-weight: 800;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.rrssmenu a{
+    color: white;
+}
+.rrssmenu a:hover{
+    color:#C8102E;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 110px;
+    width: 100%;
+    background-color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+nav{
+    text-align: center;
+    margin-right: 250px;
+    margin-top: 15px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    color:#C8102E;
+}
+.rrssmenu{
+    float: right;
+    margin-right: 200px;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin-top: -30px;
+}
+.logo1 {
+    float:left;
+    height: 90px;
+    padding: 10px;
+    margin-left: 200px;
+}
+.secciones{
+    padding: 50px 0px;
+    width:100%;
+    max-width: 1150px;
+    margin: auto;  
+    overflow: hidden;
+}
+
+
+/* INICIO */
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+body{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    height: calc(100vh - 110px);
+    width: 100%;
+    background-image: url(./multimedia/baseball1.jpg);
+    background-size: cover;
+}
+.bannerini{
+    float: left;
+    height: auto;
+    width: 40%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 30px;
+    margin: 75px 200px 0px 200px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.bannerini p{
+    margin-bottom: 20px;
+}
+.bannerini h1{
+    margin-bottom: 20px;
+}
+.bannerini a {
+    color: white;
+    text-decoration: none;
+    background-color: #C8102E;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.tituloini1{
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.sec1{
+    display: flex;
+    justify-content: space-evenly;;
+}
+.imgsec1{
+    width: 350px;
+    height: 450px;
+}
+.texsec1{
+    width: 45%;
+}
+.backgroungrojo{
+    background-color: #C8102E;
+}
+.texsec1 p{
+    margin-bottom: 30px;
+}
+.texsec1 a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: solid 2px black;
+    font-weight: 700;
+}
+.fotosec2{
+    background-image: url(./multimedia/football.jpg);
+    background-size: cover;
+}
+.tituloini2{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.seccion2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: -100px;
+}
+.episodios a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #C8102E;
+    padding: 5px 20px;
+    font-size: 18px;
+    justify-content: center;
+    margin: 0px 510px;
+    font-weight: 700;
+}
+.youtube1{
+    margin-top: 200px;
+}
+.youtube2{
+    margin-top: 100px;
+}
+.tituloini3{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.tituloini3-1{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.seccion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.videos a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    justify-content: center;
+    margin: 0px 500px;
+    border: 2px solid black;
+    font-weight: 700;
+}
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+footer i{
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: white;
+}
+.up{
+    height: 40px;
+    width: 45px;
+    background-image:url(./multimedia/baseball_PNG18981.png);
+    background-size: cover;
+    color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 42px;
+    padding-left: 5px;
+
+}
+#seccionpie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pie1{
+    padding-top: 30px;
+    text-align: left;
+}
+.pie1 h2{
+    color: white;
+}
+.pie1 a{
+    color: white;
+    text-decoration: none;
+}
+.pie1 a:hover{
+    text-decoration: underline;
+}
+.logo2{
+    height: 150px;
+    margin-left:10%;
+    padding-top: 30px;
+}
+.rrsspie{
+    padding-top: 30px;
+    line-height: 50px;
+}
+.rrsspie a{
+    color: white;
+}
+.rrsspie h2{
+    color: white;
+}
+
+/* ABOUT ME*/
+
+#about{
+    background-image: url(./multimedia/Boxeo.jpg);
+    height: calc(100vh - 110px);
+    width: 100%;
+    background-size: cover;
+}
+.bannerabout{
+    color: white;
+    text-align: center;
+    padding: 250px 0px 200px 0px;
+}
+.imgabout{
+    height: 400px;
+    width: 400px;
+    margin: 0px 25px 25px 125px;
+    padding: 25px 0px 25px 50px;
+}
+.h3about1{
+    margin: 50px 25px 15px 175px;
+    font-size: 35px;
+}
+.h2about1{
+    margin: 0px 25px 25px 175px;
+    font-size: 40px;
+}
+.textoabout{
+    float: right;
+    height: auto;
+    width: 40%;
+    margin: 20px 200px 0px 0px
+}
+.h2about1 .textoabout{
+    display: flex;
+    flex-direction: row;
+}
+#suscripcion{
+    background-color: #C8102E;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+/* VIDEOS */
+
+#mainvideos{
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+}
+.videosh1{
+    color: rgb(22, 21, 21);
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+.tiktok{
+    margin: 0px 0px 50px 180px;
+}
+
+/* EPISODIOS */
+
+#episodios{
+    background-image: url(./multimedia/Tenis2.jpg);
+    height: calc(100vh - 110px);
+    width: 100%;
+    background-size: cover;
+
+}
+.bannerepisodios{
+    color: white;
+    text-align: center;
+    padding: 250px 0px 275px 0px;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+#episodios2{
+    background-color: #C8102E;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
