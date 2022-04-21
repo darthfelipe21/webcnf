@@ -332,10 +332,13 @@ footer i{
     text-align: justify;
 }
 .galeriabout{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content:space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    align-content: center;
+
+
     margin-top: 50px;
 }
 .mlbabout{
@@ -347,8 +350,9 @@ footer i{
     width: 300px;
 }
 .f1about {
-    height: 425px;
-    width: 325px;
+    height: 430px;
+    width: 330px;
+    margin-top: -15px;
 }
 .secabout1 button{
     display: flex;
@@ -360,7 +364,7 @@ footer i{
     font-weight: 700;
     margin-top: 30px;
     align-items: center;
-    margin-left: auto;  
+    margin-left: auto; 
     margin-right: auto;
 }
 .secabout1 a{
@@ -416,7 +420,7 @@ footer i{
 /* EPISODIOS */
 
 #episodios{
-    background-image: url(../multimedia/tenis.jpg);
+    background-image: url(./multimedia/tenis.jpg);
     height: calc(100vh - 110px);
     background-position: 50%;
 }
@@ -526,6 +530,22 @@ footer i{
     #episodios h2{
         margin-top: 150px;
     }
+    .mlbabout{
+        height: 300px;
+        width: 200px;
+    }
+    .nflabout {
+        height: 300px;
+        width: 200px;
+    }
+    .f1about {
+        height: 300px;
+        width: 200px;
+        margin-top: 0;
+    }
+    .bannerabout{
+        padding: 170px
+    }
 }
 @media screen and (max-width: 1000px){
     .seccion2{
@@ -575,24 +595,6 @@ footer i{
     .textoabout{
         margin-top: 30px;
     }
-    .mlbabout{
-        height: 300px;
-        width: 200px;
-    }
-    .f1about{
-        height: 350px;
-        width: 250px;
-    }
-    .nflabout{
-        height: 300px;
-        width: 200px;
-    }
-    .galeriabout{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
 }
 @media screen and (max-width: 900px){
     .bannerini{
@@ -613,6 +615,9 @@ footer i{
     .inicio a{
         text-decoration: none;
     }
+    .bannerabout h1{
+        background-color: rgba(21, 20, 20, 0.353);
+    }
     .bannerini p{
         font-size: 20px;
     }
@@ -621,6 +626,24 @@ footer i{
     }
     .inicio{
         height: 450px;
+}
+    .galeriabout{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+}
+.mlbabout{
+    height: 400px;
+    width: 300px;
+}
+.nflabout {
+    height: 400px;
+    width: 300px;
+}
+.f1about {
+    height: 400px;
+    width: 300px;
 }
 }
 @media screen and (max-width: 899px){
