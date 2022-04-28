@@ -3,12 +3,66 @@
     padding: 0px;
     box-sizing: border-box;
 }
-nav ul li a{
-    color: white;
+.nav {
+    text-transform: uppercase;
+    text-align: center;
     font-weight: 800;
 }
-nav ul li a:hover{
-    text-decoration: underline;
+
+  .nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin-left: 40px;
+}
+.nav a {
+    padding: 5px 8px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #C8102E;
+    border-right: 3px solid #C8102E;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #C8102E;
+    border-left: 3px solid #C8102E;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #C8102E;
 }
 .rrssmenu a{
     color: white;
@@ -30,22 +84,10 @@ header{
 }
 nav{
     text-align: center;
-    margin-right: 250px;
-    margin-top: 15px;
+    margin-left: 380px;
+    margin-top: 30px;
 }
-nav ul{
-    list-style: none;
-}
-nav ul li{
-    display: inline-block;
-    padding: 10px;
-}
-nav a{
-    text-decoration: none;
-}
-nav a:hover{
-    color:#C8102E;
-}
+
 .rrssmenu{
     float: right;
     margin-right: 200px;
@@ -119,6 +161,16 @@ body{
     font-size: 18px;
     font-weight: 700;
     margin-left: 220px;
+    border: white solid 2px;
+}
+.botonini1:hover{
+    color: black;
+    border: 2px solid #C8102E;
+    background-color: white;
+}
+.aboutme1{
+    background-image: url(./multimedia/layered-steps-haikei.svg);
+    background-size: cover;
 }
 .tituloini1{
     color: black;
@@ -143,15 +195,27 @@ body{
 .texsec1 p{
     margin-bottom: 30px;
 }
-.texsec1 button{
-    color: black;
+.texsec1 a{
+    color: white;
     text-decoration: none;
-    background-color: white;
+    background-color:#C8102E;
     padding: 5px 20px;
     font-size: 18px;
     border: solid 2px black;
     font-weight: 700;
 }
+.texsec1 a:hover{
+    color: black;
+    border: 2px solid #C8102E;
+    background-color: white;
+}
+/*button{
+    transition: all 1s;
+}
+button:hover{
+    background-color: white;
+    color:#C8102E;
+}*/
 .fotosec2{
     background-image: url(./multimedia/football.jpg);
     background-size: cover;
@@ -178,8 +242,17 @@ body{
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 690px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+.botonini3:hover{
+    color: black;
+    border: 2px solid #C8102E;
+    background-color: white;
 }
 .fotosec2 a{
     text-decoration: none;
@@ -208,20 +281,25 @@ body{
     flex-direction: row;
     margin-bottom: 30px;
 }
-.videos button{
+.videos a{
     display: flex;
     color: black;
     text-decoration: none;
     background-color: white;
     padding: 5px 20px;
     font-size: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
     font-weight: 700;
+    margin-left: 520px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
 }
-.videos a{
-    text-decoration: none;
+.videos a:hover{
+    color:#C8102E;
+    border: 2px solid white;
+    background-color: black;
 }
 
 
@@ -354,23 +432,27 @@ footer i{
     width: 330px;
     margin-top: -15px;
 }
-.secabout1 button{
+.secabout1 a{
     display: flex;
     color: white;
-    background-color: #C8102E;
+    text-decoration: none;
+    background-color:#C8102E;
     padding: 5px 20px;
     font-size: 18px;
-    justify-content: center;
     font-weight: 700;
-    margin-top: 30px;
+    margin-left: 520px;
+    width: 150px;
+    height: 40px;
     align-items: center;
-    margin-left: auto; 
-    margin-right: auto;
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 30px;
 }
-.secabout1 a{
-    text-decoration: none;
-    color: white;
-}
+.secabout1 a:hover{
+        color:#C8102E;
+        border: 2px solid black;
+        background-color: white;
+    }
 #suscripcion{
     background-color: #C8102E;
     text-align: center;
@@ -388,6 +470,8 @@ footer i{
     color: rgb(22, 21, 21);
     text-align: center;
     padding: 50px 0px 50px 0px;
+    margin-bottom: 50px;
+    margin-top: -50px;
 }
 .secvideos{
     display: grid;
@@ -401,10 +485,19 @@ footer i{
 
 }
 .tiktok1{
-    margin-top: 250px;
+    margin-top: 150px;
+}
+.tiktok1:hover{
+    transform: scale(1.2);
+}
+.tiktok2:hover{
+    transform: scale(1.2);
+}
+.tiktok3:hover{
+    transform: scale(1.2);
 }
 .tiktok3{
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 /* EPISODIOS */
@@ -602,6 +695,9 @@ footer i{
     margin: auto;
     margin-top: 20px;
 }
+    .aboutme1{
+        background: none;
+    }
     .inicio a{
         text-decoration: none;
     }
@@ -640,7 +736,7 @@ footer i{
     .bannerini p{
         font-size: 14px;
     }
-    .inicio button{
+    .inicio a{
         text-decoration: none;
         font-size: 15px;
     }
@@ -689,7 +785,7 @@ footer i{
     .bannerini p{
             font-size: 12px;
         }
-    .inicio button{
+    .inicio a{
         text-decoration: none;
         font-size: 12px;
         }
@@ -706,7 +802,7 @@ footer i{
     .texsec1 p{
         margin: 20px -20px;
     }
-    .texsec1 button{
+    .texsec1 a{
         font-size: 12px;
     }
     .tituloini1{
@@ -765,7 +861,7 @@ footer i{
             width: 250px;
             margin: 20px 20px;
         }
-        .secabout1 button{
+        .secabout1 a{
             font-size: 15px;
         }
         #about {
