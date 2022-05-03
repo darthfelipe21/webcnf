@@ -162,6 +162,7 @@ body{
     font-weight: 700;
     margin:calc(50%-64px);
     margin-bottom: 50px;
+    margin-left: 220px;
     width: 150px;
     height: 40px;
     border: 2px solid white;
@@ -296,6 +297,8 @@ body{
 }
 .videos a{
     display: flex;
+    margin-left: 500px;
+    margin-top: 30px;
     color: black;
     text-decoration: none;
     background-color: white;
@@ -313,6 +316,9 @@ body{
     color:#C8102E;
     border: 2px solid white;
     background-color: black;
+}
+.pointer{
+    cursor: pointer;
 }
 
 /*PIE DE PAGINA*/
