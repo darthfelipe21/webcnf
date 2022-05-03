@@ -136,16 +136,16 @@ body{
 .bannerini{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
     height: auto;
     width: 40%;
     color: white;
     background-color: rgba(0, 0, 0, 0.353);
     padding: 30px;
-    margin: 50px 200px 0px 200px;
+    margin: 20px 200px 0px 200px;
     text-align: justify;
     letter-spacing: 1px;
+    line-height: 20px;
 }
 .bannerini p{
     margin-bottom: 20px;
@@ -156,12 +156,15 @@ body{
 .botonini1{
     color: white;
     text-decoration: none;
-    background-color: #C8102E;
+    background-color:#C8102E;
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 220px;
-    border: white solid 2px;
+    margin:calc(50%-64px);
+    margin-bottom: 50px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
 }
 .botonini1:hover{
     color: black;
@@ -209,13 +212,6 @@ body{
     border: 2px solid #C8102E;
     background-color: white;
 }
-/*button{
-    transition: all 1s;
-}
-button:hover{
-    background-color: white;
-    color:#C8102E;
-}*/
 .fotosec2{
     background-image: url(./multimedia/football.jpg);
     background-size: cover;
@@ -224,7 +220,7 @@ button:hover{
 .tituloini2{
     color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 35px;
 }
 .seccion2{
@@ -234,15 +230,19 @@ button:hover{
     margin-bottom: 30px;
     margin-top: -100px;
 }
+.seccion2 video{
+    margin-top: 100px;
+}
 .botonini3{
     display: flex;
     color: white;
     text-decoration: none;
-    background-color: #C8102E;
+    background-color:#C8102E;
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 690px;
+    margin-left: 650px;
+    margin-top: 30px;
     width: 150px;
     height: 40px;
     align-items: center;
@@ -258,15 +258,28 @@ button:hover{
     text-decoration: none;
 }
 .youtube1{
-    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .youtube2{
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.youtube3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .tituloini3{
     color: white;
     text-align: center;
     font-size: 35px;
+    margin-bottom: 30px;
 }
 .tituloini3-1{
     color: white;
@@ -289,7 +302,7 @@ button:hover{
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 520px;
+
     width: 150px;
     height: 40px;
     align-items: center;
@@ -301,8 +314,6 @@ button:hover{
     border: 2px solid white;
     background-color: black;
 }
-
-
 
 /*PIE DE PAGINA*/
 
@@ -330,7 +341,9 @@ footer i{
     text-align: center;
     line-height: 42px;
     padding-left: 5px;
-
+}
+.up:hover{
+    color: white;
 }
 #seccionpie{
     display: flex;
@@ -415,8 +428,6 @@ footer i{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
     align-content: center;
-
-
     margin-top: 50px;
 }
 .mlbabout{
@@ -597,11 +608,21 @@ footer i{
         margin: auto;
         flex-direction: column;
     }
+    .botonini3{
+        margin: auto;
+    }
 
 }
 @media screen and (max-width: 1200px){
     .episodios2{
         padding: 20px 20px;
+    }
+    .videos a{
+        margin:auto;
+        margin-top: 30px;
+    }
+    .bannerini{
+        line-height: 17px;
     }
     .bannerepisodios{
         display: flex;
@@ -629,8 +650,17 @@ footer i{
     .bannerabout{
         padding: 170px
     }
+    .botonini3{
+        margin: auto;
+    }
 }
 @media screen and (max-width: 1000px){
+    .inicio{
+        height: 500px;
+    }
+    .botonini1{
+        margin-left: 120px;
+    }
     .seccion2{
         display: flex;
         justify-content: center;
@@ -651,19 +681,19 @@ footer i{
         text-align: justify;
         letter-spacing: 1px;
         margin: auto;
-        margin-top: 20px;
-    }
-    .youtube1 {
         margin-top: 70px;
     }
-    .youtube2 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .youtube1 {
+        width: 600px;
+        height: 350px;
     }
-    .botonini1{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    .youtube2 {
+        width: 600px;
+        height: 350px;
+    }
+    .youtube3 {
+        width: 600px;
+        height: 350px;
     }
     .inicio a{
         text-decoration: none;
@@ -686,14 +716,14 @@ footer i{
     flex-direction: column;
     align-content: center;
     height: auto;
-    width: 60%;
+    width: 80%;
     color: white;
     background-color: rgba(0, 0, 0, 0.353);
-    padding: 20px;
+    padding: 10px;
     text-align: justify;
     letter-spacing: 1px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
 }
     .aboutme1{
         background: none;
@@ -705,7 +735,7 @@ footer i{
         background-color: rgba(21, 20, 20, 0.353);
     }
     .bannerini p{
-        font-size: 20px;
+        font-size: 15px;
     }
     .bannerini h1{
         font-size: 30px;
@@ -736,12 +766,17 @@ footer i{
     .bannerini p{
         font-size: 14px;
     }
+    .botonini1{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
     .inicio a{
         text-decoration: none;
         font-size: 15px;
     }
     .bannerini{
-        width: 90%;
+        width: 80%;
+        margin-top: 5px;
     }
     nav li{
         font-size: 15px;
@@ -777,18 +812,43 @@ footer i{
     .ph2{
         font-size: 15px;
     }
+    .youtube1{
+        height: 250px;
+        width: 400px;
+    }
+    .youtube2{
+        height: 250px;
+        width: 400px;
+    }
+    .youtube3{
+        height: 250px;
+        width: 400px;
+    }
 }
 @media screen and (max-width: 800px){
     nav li{
         font-size: 12px;
     }
+    .botonini1{
+        padding: 10px;
+        margin-left: 70px;
+    }
+    .bannerini{
+        margin-top: 40px;
+    }
     .bannerini p{
             font-size: 12px;
         }
+    .inicio{
+        height: 450px;
+    }
     .inicio a{
         text-decoration: none;
         font-size: 12px;
         }
+    .videos a{
+        font-size: 12px;
+    }
     .sec1{
         display: flex;
         align-items: center;
@@ -831,6 +891,9 @@ footer i{
     }
     }
     @media screen and (max-width: 650px){
+        .inicio{
+            height: 400px;
+        }
         .inicio{
             height: 500px;
         }
@@ -881,6 +944,22 @@ footer i{
             height: 170px;
             width: 300px;
         }
-
     }
+    @media screen and (max-width: 510px){
+    .inicio{
+        height: 600px;
+    }
+    .youtube1{
+        height: 150px;
+        width: 300px;
+    }
+    .youtube2{
+        height: 150px;
+        width: 300px;
+    }
+    .youtube3{
+        height: 150px;
+        width: 300px;
+    }
+}
 
