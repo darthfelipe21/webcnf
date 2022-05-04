@@ -17,10 +17,10 @@
 .nav li {
     display: inline-block;
     list-style: outside none none;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .nav a {
-    padding: 5px 8px;
+    padding: 5px 5px;
     color: white;
     position: relative;
     text-decoration: none;
@@ -73,39 +73,35 @@
 html{
     scroll-behavior: smooth;
 }
-header{
-    height: 110px;
-    width: 100%;
-    background-color: black;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px;
-}
-nav{
-    text-align: center;
-    margin-left: 380px;
-    margin-top: 30px;
-}
-
 .rrssmenu{
     float: right;
-    margin-right: 200px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-size: 20px;
-    margin-top: -30px;
 }
-.logo1 {
-    float:left;
-    height: 90px;
-    padding: 10px;
+.logo1{
+    height: 70px;
+}
+header{
+    background-color: #212529;
+}
+.header{
     margin-left: 200px;
+    margin-right: 200px;
+}
+.navbar-nav{
+    padding-right: 0px;
 }
 .secciones{
     padding: 50px 0px;
     width:100%;
     max-width: 1150px;
     margin: auto;  
+    overflow: hidden;
+}
+#suscripcion{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
     overflow: hidden;
 }
 .secciones3{
@@ -476,6 +472,23 @@ footer i{
     padding: 50px 0px 50px 0px;
 }
 
+.btn{
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+}
+.btn:hover{
+    background-color: #C8102E;
+    border: black 2px solid;
+    color: white;
+}
+label{
+    display: flex;
+    font-weight: 600;
+    justify-content: left;
+}
+
 /* VIDEOS */
 
 #mainvideos{
@@ -560,39 +573,21 @@ footer i{
 /*RESPONSIVE*/
 /*INICIO*/
 @media screen and (max-width: 1400px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 160px;
-    }
     .bannerini{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    height: auto;
-    width: 60%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.353);
-    padding: 20px;
-    text-align: justify;
-    letter-spacing: 1px;
-    margin: auto;
-    margin-top: 20px;
-    }
-    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: 60%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.353);
+        padding: 20px;
+        text-align: justify;
+        letter-spacing: 1px;
         margin: auto;
-    }
-    .rrssmenu{
-        margin: auto;
-    }
-    .logo1{
-        margin: auto;
-        height: 80px;
-    }
-    
+        margin-top: 20px;
+}
     .inicio{
         height: 450px;
         width: 100%;
@@ -618,6 +613,12 @@ footer i{
         margin: auto;
     }
 
+}
+@media screen and (max-width: 1300px){
+    .header{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 @media screen and (max-width: 1200px){
     .episodios2{
@@ -660,6 +661,11 @@ footer i{
         margin: auto;
     }
 }
+@media screen and (max-width: 1100px){
+    .header{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 @media screen and (max-width: 1000px){
     .inicio{
         height: 500px;
@@ -714,6 +720,9 @@ footer i{
     .textoabout{
         margin-top: 30px;
     }
+    .rrssmenu{
+        display: none;
+    }
 }
 @media screen and (max-width: 900px){
     .bannerini{
@@ -755,17 +764,17 @@ footer i{
         grid-template-columns: 1fr;
         grid-gap: 20px;
 }
-.mlbabout{
-    height: 400px;
-    width: 300px;
+    .mlbabout{
+        height: 400px;
+        width: 300px;
 }
-.nflabout {
-    height: 400px;
-    width: 300px;
+    .nflabout {
+        height: 400px;
+        width: 300px;
 }
-.f1about {
-    height: 400px;
-    width: 300px;
+    .f1about {
+        height: 400px;
+        width: 300px;
 }
 }
 @media screen and (max-width: 899px){
@@ -783,18 +792,6 @@ footer i{
     .bannerini{
         width: 80%;
         margin-top: 5px;
-    }
-    nav li{
-        font-size: 15px;
-        margin: auto;
-    }
-    .rrssmenu{
-        font-size: 15px;
-        margin: auto;
-    }
-    .logo1{
-        margin: auto;
-        height: 70px;
     }
     .inicio{
         height: 350px;
@@ -896,62 +893,59 @@ footer i{
         font-size: 30px;
     }
     }
-    @media screen and (max-width: 650px){
-        .inicio{
-            height: 400px;
-        }
-        .inicio{
-            height: 500px;
-        }
-        .h3about1{
-            font-size: 20px;
-        }
-        .h2about1{
-            font-size: 30px;
-        }
-        .galeriabout{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .mlbabout{
-            height: 350px;
-            width: 250px;
-            margin: 20px 20px;
-        }
-        .f1about{
-            height: 350px;
-            width: 250px;
-            margin: 20px 20px;
-        }
-        .nflabout{
-            height: 350px;
-            width: 250px;
-            margin: 20px 20px;
-        }
-        .secabout1 a{
-            font-size: 15px;
-        }
-        #about {
-            background-size: center;
-        }
-        #about h1{
-            font-size: 30px;
-        }
-        .textoabout p{
-            font-size: 15px;
-        }
-        .imgabout{
-            height: 300px;
-            width: 300px;
-        }
-        .episodios2 iframe{
-            height: 170px;
-            width: 300px;
-        }
+@media screen and (max-width: 650px){
+    .inicio{
+        height: 500px;
     }
-    @media screen and (max-width: 510px){
+    .h3about1{
+        font-size: 20px;
+    }
+    .h2about1{
+        font-size: 30px;
+    }
+    .galeriabout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mlbabout{
+        height: 350px;
+        width: 250px;
+        margin: 20px 20px;
+    }
+    .f1about{
+        height: 350px;
+        width: 250px;
+        margin: 20px 20px;
+    }
+    .nflabout{
+        height: 350px;
+        width: 250px;
+        margin: 20px 20px;
+    }
+    .secabout1 a{
+        font-size: 15px;
+    }
+    #about {
+        background-size: center;
+    }
+    #about h1{
+        font-size: 30px;
+    }
+    .textoabout p{
+        font-size: 15px;
+    }
+    .imgabout{
+        height: 300px;
+        width: 300px;
+    }
+    .episodios2 iframe{
+        height: 170px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 510px){
     .inicio{
         height: 600px;
     }
@@ -966,6 +960,10 @@ footer i{
     .youtube3{
         height: 150px;
         width: 300px;
+    }
+    .header{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
