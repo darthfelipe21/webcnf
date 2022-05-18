@@ -167,7 +167,6 @@ body {
   height: 40px;
   border: 2px solid white;
 }
-
 .botonini1:hover {
   color: black;
   border: 2px solid #C8102E;
@@ -202,7 +201,8 @@ body {
 .texsec1 p {
   margin-bottom: 30px;
 }
-.texsec1 a {
+
+.extend, .secabout1 a {
   color: white;
   text-decoration: none;
   background-color: #C8102E;
@@ -211,7 +211,7 @@ body {
   border: solid 2px black;
   font-weight: 700;
 }
-.texsec1 a:hover {
+.extend:hover, .secabout1 a:hover {
   color: black;
   border: 2px solid #C8102E;
   background-color: white;
@@ -264,7 +264,6 @@ body {
   justify-content: center;
   border: 2px solid white;
 }
-
 .botonini3:hover {
   color: black;
   border: 2px solid #C8102E;
@@ -467,11 +466,13 @@ footer i {
 .mlbabout {
   height: 400px;
   width: 300px;
+  margin-top: auto;
 }
 
 .nflabout {
   height: 400px;
   width: 300px;
+  margin-top: auto;
 }
 
 .f1about {
@@ -482,18 +483,12 @@ footer i {
 
 .secabout1 a {
   display: flex;
-  color: white;
-  text-decoration: none;
-  background-color: #C8102E;
-  padding: 5px 20px;
-  font-size: 18px;
   font-weight: 700;
   margin-left: 520px;
   width: 150px;
   height: 40px;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
   margin-top: 30px;
 }
 .secabout1 a:hover {

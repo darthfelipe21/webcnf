@@ -1,731 +1,794 @@
-*{
-    margin:0;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
 .nav {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
 }
-
-  .nav * {
-    box-sizing: border-box;
-    transition: all .35s ease;
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
 }
-
 .nav li {
-    display: inline-block;
-    list-style: outside none none;
-    margin-left: 20px;
+  display: inline-block;
+  list-style: outside none none;
+  margin-left: 20px;
 }
 .nav a {
-    padding: 5px 5px;
-    color: white;
-    position: relative;
-    text-decoration: none;
-    font-size: 15px;
+  padding: 5px 5px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
 }
-
 .nav a::before,
 .nav a::after {
-    content: '';
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    transition: all .35s ease;
-    opacity: 0;
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
 }
-
 .nav a::before {
-    content: '';
-    right: 0;
-    top: 0;
-    border-top: 3px solid #C8102E;
-    border-right: 3px solid #C8102E;
-    transform: translate(-100%, 50%);
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #C8102E;
+  border-right: 3px solid #C8102E;
+  transform: translate(-100%, 50%);
 }
-
 .nav a:after {
-    content: '';
-    left: 0;
-    bottom: 0;
-    border-bottom: 3px solid #C8102E;
-    border-left: 3px solid #C8102E;
-    transform: translate(100%, -50%)
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #C8102E;
+  border-left: 3px solid #C8102E;
+  transform: translate(100%, -50%);
 }
-
 .nav a:hover:before,
-.nav a:hover:after{
-    transform: translate(0,0);
-    opacity: 1;
+.nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
 }
-
 .nav a:hover {
-    color: #C8102E;
-}
-.rrssmenu a{
-    color: white;
-}
-.rrssmenu a:hover{
-    color:#C8102E;
-}
-html{
-    scroll-behavior: smooth;
-}
-.rrssmenu{
-    float: right;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-.logo1{
-    height: 70px;
-}
-header{
-    background-color: #212529;
-}
-.header{
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.navbar-nav{
-    padding-right: 0px;
-}
-.secciones{
-    padding: 50px 0px;
-    width:100%;
-    max-width: 1150px;
-    margin: auto;  
-    overflow: hidden;
-}
-#suscripcion{
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-.secciones3{
-    width:100%;
-    max-width: 1150px;
-    margin: auto;  
-    overflow: hidden;
+  color: #C8102E;
 }
 
-
-/* INICIO */
-
-h1{
-    font-size: 40px;
-    font-weight: bold;
+.rrssmenu {
+  float: right;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
-body{
-    color:black;
-    font-family: 'Montserrat', sans-serif;
+.rrssmenu a {
+  color: white;
 }
-.inicio{
-    height: 620px;
-    width: 100%;
-    background-image: url(./multimedia/baseball1.jpg);
-    background-size: cover;
-    padding-top: 25px;
-}
-.bannerini{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: auto;
-    width: 40%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.353);
-    padding: 30px;
-    margin: 20px 200px 0px 200px;
-    text-align: justify;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-.bannerini p{
-    margin-bottom: 20px;
-}
-.bannerini h1{
-    margin-bottom: 20px;
-}
-.botonini1{
-    color: white;
-    text-decoration: none;
-    background-color:#C8102E;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    margin:calc(50%-64px);
-    margin-bottom: 50px;
-    margin-left: 220px;
-    width: 150px;
-    height: 40px;
-    border: 2px solid white;
-}
-.botonini1:hover{
-    color: black;
-    border: 2px solid #C8102E;
-    background-color: white;
-}
-.aboutme1{
-    background-image: url(./multimedia/layered-steps-haikei.svg);
-    background-size: cover;
-}
-.tituloini1{
-    color: black;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 35px;
-}
-.sec1{
-    display: flex;
-    justify-content: space-evenly;;
-}
-.imgsec1{
-    width: 350px;
-    height: 450px;
-}
-.texsec1{
-    width: 45%;
-}
-.backgroungrojo{
-    background-color: #C8102E;
-}
-.texsec1 p{
-    margin-bottom: 30px;
-}
-.texsec1 a{
-    color: white;
-    text-decoration: none;
-    background-color:#C8102E;
-    padding: 5px 20px;
-    font-size: 18px;
-    border: solid 2px black;
-    font-weight: 700;
-}
-.texsec1 a:hover{
-    color: black;
-    border: 2px solid #C8102E;
-    background-color: white;
-}
-.fotosec2{
-    background-image: url(./multimedia/football.jpg);
-    background-size: cover;
-    padding-bottom: 50px;
-}
-.tituloini2{
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 35px;
-}
-.seccion2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: -100px;
-}
-.seccion2 video{
-    margin-top: 100px;
-}
-.botonini3{
-    display: flex;
-    color: white;
-    text-decoration: none;
-    background-color:#C8102E;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 650px;
-    margin-top: 30px;
-    width: 150px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-}
-.botonini3:hover{
-    color: black;
-    border: 2px solid #C8102E;
-    background-color: white;
-}
-.fotosec2 a{
-    text-decoration: none;
-}
-.youtube1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.youtube2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.youtube3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.tituloini3{
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-.tituloini3-1{
-    color: white;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 25px;
-}
-.seccion3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 30px;
-}
-.videos a{
-    display: flex;
-    margin-left: 500px;
-    margin-top: 30px;
-    color: black;
-    text-decoration: none;
-    background-color: white;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: 700;
-
-    width: 150px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-}
-.videos a:hover{
-    color:#C8102E;
-    border: 2px solid white;
-    background-color: black;
-}
-.pointer{
-    cursor: pointer;
+.rrssmenu a:hover {
+  color: #C8102E;
 }
 
-/*PIE DE PAGINA*/
-
-footer{
-    height: auto;
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    padding-bottom: 30px;
-}
-footer i{
-    font-size: 20px;
-    letter-spacing: 15px;
-    color: white;
-}
-.up{
-    height: 40px;
-    width: 45px;
-    background-image:url(./multimedia/baseball_PNG18981.png);
-    background-size: cover;
-    color: red;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    line-height: 42px;
-    padding-left: 5px;
-}
-.up:hover{
-    color: white;
-}
-#seccionpie{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.pie1{
-    padding-top: 30px;
-    text-align: left;
-    text-transform: uppercase;
-}
-.pie1 h2{
-    color: white;
-    font-size: 15px;
-}
-.pie1 a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-.pie1 a:hover{
-    text-decoration: underline;
-}
-.logo2{
-    height: 150px;
-    margin-left:-50%;
-    padding-top: 30px;
-}
-.rrsspie{
-    padding-top: 10px;
-    line-height: 40px;
-}
-.rrsspie a{
-    color: white;
-}
-.rrsspie a:hover{
-    color: #C8102E;
-}
-.rrsspie h2{
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
+.logo1 {
+  height: 70px;
 }
 
-/* ABOUT ME*/
+header {
+  background-color: #212529;
+}
 
-#about{
-    background-image: url(./multimedia/Boxeo.jpg);
-    height: calc(100vh - 110px);
-    width: 100%;
-    background-size: cover;
+.header {
+  margin-left: 200px;
+  margin-right: 200px;
 }
-.bannerabout{
-    color: white;
-    text-align: center;
-    padding: 250px 0px 200px 0px;
+
+.navbar-nav {
+  padding-right: 0px;
 }
-.h3about1{
-    font-size: 35px;
+
+.secciones {
+  padding: 50px 0px;
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  overflow: hidden;
 }
-.h2about1{
-    font-size: 40px;
-    padding-bottom: 20px;
+
+#suscripcion {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
 }
-.about1{
-    display: flex;
-    justify-content: space-evenly;
+
+.secciones3 {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  overflow: hidden;
 }
-.imgabout{
-    width: 30%;
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
 }
-.about1 .textoabout{
-    width: 48%;
-    text-align: justify;
+
+body {
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
-.galeriabout{
-    display: grid;
-    justify-content:space-evenly;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    align-content: center;
-    margin-top: 50px;
+
+.inicio {
+  height: 620px;
+  width: 100%;
+  background-image: url(./multimedia/baseball1.jpg);
+  background-size: cover;
+  padding-top: 25px;
 }
-.mlbabout{
-    height: 400px;
-    width: 300px;
+
+.bannerini {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: 40%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.353);
+  padding: 30px;
+  margin: 20px 200px 0px 200px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 20px;
 }
+.bannerini p {
+  margin-bottom: 20px;
+}
+.bannerini h1 {
+  margin-bottom: 20px;
+}
+
+.botonini1 {
+  color: white;
+  text-decoration: none;
+  background-color: #C8102E;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: calc(50% - 64px);
+  margin-bottom: 50px;
+  margin-left: 220px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid white;
+}
+.botonini1:hover {
+  color: black;
+  border: 2px solid #C8102E;
+  background-color: white;
+}
+
+.aboutme1 {
+  background-image: url(./multimedia/layered-steps-haikei.svg);
+  background-size: cover;
+}
+
+.tituloini1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgsec1 {
+  width: 350px;
+  height: 450px;
+}
+
+.texsec1 {
+  width: 45%;
+}
+.texsec1 p {
+  margin-bottom: 30px;
+}
+
+.extend, .secabout1 a {
+  color: white;
+  text-decoration: none;
+  background-color: #C8102E;
+  padding: 5px 20px;
+  font-size: 18px;
+  border: solid 2px black;
+  font-weight: 700;
+}
+.extend:hover, .secabout1 a:hover {
+  color: black;
+  border: 2px solid #C8102E;
+  background-color: white;
+}
+
+.backgroungrojo {
+  background-color: #C8102E;
+}
+
+.fotosec2 {
+  background-image: url(./multimedia/football.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.fotosec2 a {
+  text-decoration: none;
+}
+
+.tituloini2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.seccion2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: -100px;
+}
+.seccion2 video {
+  margin-top: 100px;
+}
+
+.botonini3 {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #C8102E;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 650px;
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+.botonini3:hover {
+  color: black;
+  border: 2px solid #C8102E;
+  background-color: white;
+}
+
+.youtube1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.youtube2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.youtube3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.tituloini3 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.tituloini3-1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.seccion3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.videos a {
+  display: flex;
+  margin-left: 500px;
+  margin-top: 30px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.videos a:hover {
+  color: #C8102E;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 30px;
+}
+footer i {
+  font-size: 20px;
+  letter-spacing: 15px;
+  color: white;
+}
+
+.up {
+  height: 40px;
+  width: 45px;
+  background-image: url(./multimedia/baseball_PNG18981.png);
+  background-size: cover;
+  color: #C8102E;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 42px;
+  padding-left: 5px;
+}
+
+.up:hover {
+  color: white;
+}
+
+#seccionpie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pie1 {
+  padding-top: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.pie1 h2 {
+  color: white;
+  font-size: 15px;
+}
+.pie1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.pie1 a:hover {
+  text-decoration: underline;
+}
+
+.logo2 {
+  height: 150px;
+  margin-left: -50%;
+  padding-top: 30px;
+}
+
+.rrsspie {
+  padding-top: 10px;
+  line-height: 40px;
+}
+.rrsspie a {
+  color: white;
+}
+.rrsspie a:hover {
+  color: #C8102E;
+}
+.rrsspie h2 {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#about {
+  background-image: url(./multimedia/Boxeo.jpg);
+  height: calc(100vh - 110px);
+  width: 100%;
+  background-size: cover;
+}
+
+.bannerabout {
+  color: white;
+  text-align: center;
+  padding: 250px 0px 200px 0px;
+}
+
+.h3about1 {
+  font-size: 35px;
+}
+
+.h2about1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.about1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about1 .textoabout {
+  width: 48%;
+  text-align: justify;
+}
+
+.imgabout {
+  width: 30%;
+}
+
+.galeriabout {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.mlbabout {
+  height: 400px;
+  width: 300px;
+  margin-top: auto;
+}
+
 .nflabout {
-    height: 400px;
-    width: 300px;
+  height: 400px;
+  width: 300px;
+  margin-top: auto;
 }
+
 .f1about {
-    height: 430px;
-    width: 330px;
-    margin-top: -15px;
-}
-.secabout1 a{
-    display: flex;
-    color: white;
-    text-decoration: none;
-    background-color:#C8102E;
-    padding: 5px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 520px;
-    width: 150px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    margin-top: 30px;
-}
-.secabout1 a:hover{
-        color:#C8102E;
-        border: 2px solid black;
-        background-color: white;
-    }
-#suscripcion{
-    background-color: #C8102E;
-    text-align: center;
-    padding: 50px 0px 50px 0px;
+  height: 430px;
+  width: 330px;
+  margin-top: -15px;
 }
 
-.btn{
-    margin-top: 30px;
-    background-color: white;
-    color: black;
-    border: 2px black solid;
+.secabout1 a {
+  display: flex;
+  font-weight: 700;
+  margin-left: 520px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
-.btn:hover{
-    background-color: #C8102E;
-    border: black 2px solid;
-    color: white;
-}
-label{
-    display: flex;
-    font-weight: 600;
-    justify-content: left;
-}
-
-/* VIDEOS */
-
-#mainvideos{
-    height: 1000px;
-    width: 100%;
-    background-color: white;
-}
-.videosh1{
-    color: rgb(22, 21, 21);
-    text-align: center;
-    padding: 50px 0px 50px 0px;
-    margin-bottom: 50px;
-    margin-top: -50px;
-}
-.secvideos{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    justify-content: space-evenly;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.tiktok1{
-    margin-top: 150px;
-}
-.tiktok1:hover{
-    transform: scale(1.2);
-}
-.tiktok2:hover{
-    transform: scale(1.2);
-}
-.tiktok3:hover{
-    transform: scale(1.2);
-}
-.tiktok3{
-    margin-top: 250px;
+.secabout1 a:hover {
+  color: #C8102E;
+  border: 2px solid black;
+  background-color: white;
 }
 
-/* EPISODIOS */
-
-#episodios{
-    background-image: url(./multimedia/tenis.jpg);
-    height: calc(100vh - 110px);
-    background-position: 50%;
+#suscripcion {
+  background-color: #C8102E;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
 }
 
-.bannerepisodios{
+.btn {
+  margin-top: 30px;
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+}
+
+.btn:hover {
+  background-color: #C8102E;
+  border: black 2px solid;
+  color: white;
+}
+
+label {
+  display: flex;
+  font-weight: 600;
+  justify-content: left;
+}
+
+#mainvideos {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+}
+
+.videosh1 {
+  color: rgb(22, 21, 21);
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+.secvideos {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tiktok1 {
+  margin-top: 150px;
+}
+
+.tiktok1:hover {
+  transform: scale(1.2);
+}
+
+.tiktok2:hover {
+  transform: scale(1.2);
+}
+
+.tiktok3:hover {
+  transform: scale(1.2);
+}
+
+.tiktok3 {
+  margin-top: 250px;
+}
+
+#episodios {
+  background-image: url(./multimedia/tenis.jpg);
+  height: calc(100vh - 110px);
+  background-position: 50%;
+}
+
+.bannerepisodios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 250px 0px 200px 0px;
+  text-align: center;
+}
+
+#episodios h1 {
+  background-color: rgba(0, 0, 0, 0.34);
+}
+
+#episodios h2 {
+  background-color: rgba(0, 0, 0, 0.34);
+}
+
+.episodios2 {
+  background-color: #C8102E;
+  text-align: center;
+  padding: 50px 200px 30px 200px;
+  line-height: 25px;
+}
+
+.epyoutube {
+  margin-top: 30px;
+  border: white solid 2px;
+}
+
+.eph2 {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.ph2 {
+  color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  .bannerini {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 60%;
     color: white;
-    padding: 250px 0px 200px 0px;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .inicio {
+    height: 450px;
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  .bannerini {
+    padding: 15px;
+    margin: 15px 100px 0px 200px;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .videosini1 {
+    visibility: hidden;
+  }
+
+  .secabout1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .botonini3 {
+    margin: auto;
+  }
 }
-#episodios h1{
-    background-color: rgba(0, 0, 0, 0.34);
+@media screen and (max-width: 1300px) {
+  .header {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
-#episodios h2{
-    background-color: rgba(0, 0, 0, 0.34);
-}
-.episodios2{
-    background-color: #C8102E;
-    text-align: center;
-    padding: 50px 200px 30px 200px;
-    line-height: 25px;
-}
-.epyoutube {
+@media screen and (max-width: 1200px) {
+  .episodios2 {
+    padding: 20px 20px;
+  }
+
+  .videos a {
+    margin: auto;
     margin-top: 30px;
-    border: white solid 2px;
-}
-.eph2{
-    padding-bottom: 10px;
-    color: white;
-}
-.ph2{
-    color: white;
-}
+  }
 
-/*RESPONSIVE*/
-/*INICIO*/
-@media screen and (max-width: 1400px){
-    .bannerini{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        height: auto;
-        width: 60%;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.353);
-        padding: 20px;
-        text-align: justify;
-        letter-spacing: 1px;
-        margin: auto;
-        margin-top: 20px;
-}
-    .inicio{
-        height: 450px;
-        width: 100%;
-        padding-top: 5px;
-}
-    .bannerini{
-        padding: 15px;
-        margin: 15px 100px 0px 200px;
-        letter-spacing: 1px;
-        font-size: 15px;
-}
-    .videosini1{
-        visibility: hidden;
-    }
-    .secabout1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        flex-direction: column;
-    }
-    .botonini3{
-        margin: auto;
-    }
+  .bannerini {
+    line-height: 17px;
+  }
 
+  .bannerepisodios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  #episodios h2 {
+    margin-top: 150px;
+  }
+
+  .mlbabout {
+    height: 300px;
+    width: 200px;
+  }
+
+  .nflabout {
+    height: 300px;
+    width: 200px;
+  }
+
+  .f1about {
+    height: 300px;
+    width: 200px;
+    margin-top: 0;
+  }
+
+  .bannerabout {
+    padding: 170px;
+  }
+
+  .botonini3 {
+    margin: auto;
+  }
 }
-@media screen and (max-width: 1300px){
-    .header{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+@media screen and (max-width: 1100px) {
+  .header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
-@media screen and (max-width: 1200px){
-    .episodios2{
-        padding: 20px 20px;
-    }
-    .videos a{
-        margin:auto;
-        margin-top: 30px;
-    }
-    .bannerini{
-        line-height: 17px;
-    }
-    .bannerepisodios{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0px;
-    }
-    #episodios h2{
-        margin-top: 150px;
-    }
-    .mlbabout{
-        height: 300px;
-        width: 200px;
-    }
-    .nflabout {
-        height: 300px;
-        width: 200px;
-    }
-    .f1about {
-        height: 300px;
-        width: 200px;
-        margin-top: 0;
-    }
-    .bannerabout{
-        padding: 170px
-    }
-    .botonini3{
-        margin: auto;
-    }
+@media screen and (max-width: 1000px) {
+  .inicio {
+    height: 500px;
+  }
+
+  .botonini1 {
+    margin-left: 120px;
+  }
+
+  .seccion2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .bannerini {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 80%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 70px;
+  }
+
+  .youtube1 {
+    width: 600px;
+    height: 350px;
+  }
+
+  .youtube2 {
+    width: 600px;
+    height: 350px;
+  }
+
+  .youtube3 {
+    width: 600px;
+    height: 350px;
+  }
+
+  .inicio a {
+    text-decoration: none;
+  }
+
+  .about1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .textoabout {
+    margin-top: 30px;
+  }
+
+  .rrssmenu {
+    display: none;
+  }
 }
-@media screen and (max-width: 1100px){
-    .header{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-@media screen and (max-width: 1000px){
-    .inicio{
-        height: 500px;
-    }
-    .botonini1{
-        margin-left: 120px;
-    }
-    .seccion2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 0px;
-    }
-    .bannerini{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        height: auto;
-        width: 80%;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.353);
-        padding: 20px;
-        text-align: justify;
-        letter-spacing: 1px;
-        margin: auto;
-        margin-top: 70px;
-    }
-    .youtube1 {
-        width: 600px;
-        height: 350px;
-    }
-    .youtube2 {
-        width: 600px;
-        height: 350px;
-    }
-    .youtube3 {
-        width: 600px;
-        height: 350px;
-    }
-    .inicio a{
-        text-decoration: none;
-    }
-    .about1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        flex-direction: column;
-    }
-    .textoabout{
-        margin-top: 30px;
-    }
-    .rrssmenu{
-        display: none;
-    }
-}
-@media screen and (max-width: 900px){
-    .bannerini{
+@media screen and (max-width: 900px) {
+  .bannerini {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -739,230 +802,289 @@ label{
     letter-spacing: 1px;
     margin: auto;
     margin-top: 50px;
+  }
+
+  .aboutme1 {
+    background: none;
+  }
+
+  .inicio a {
+    text-decoration: none;
+  }
+
+  .bannerabout h1 {
+    background-color: rgba(21, 20, 20, 0.353);
+  }
+
+  .bannerini p {
+    font-size: 15px;
+  }
+
+  .bannerini h1 {
+    font-size: 30px;
+  }
+
+  .inicio {
+    height: 450px;
+  }
+
+  .galeriabout {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .mlbabout {
+    height: 400px;
+    width: 300px;
+  }
+
+  .nflabout {
+    height: 400px;
+    width: 300px;
+  }
+
+  .f1about {
+    height: 400px;
+    width: 300px;
+  }
 }
-    .aboutme1{
-        background: none;
-    }
-    .inicio a{
-        text-decoration: none;
-    }
-    .bannerabout h1{
-        background-color: rgba(21, 20, 20, 0.353);
-    }
-    .bannerini p{
-        font-size: 15px;
-    }
-    .bannerini h1{
-        font-size: 30px;
-    }
-    .inicio{
-        height: 450px;
+@media screen and (max-width: 899px) {
+  .bannerini p {
+    font-size: 14px;
+  }
+
+  .botonini1 {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  .inicio a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .bannerini {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  .inicio {
+    height: 350px;
+  }
+
+  #seccionpie h2 {
+    font-size: 12px;
+  }
+
+  #seccionpie a {
+    font-size: 10px;
+  }
+
+  .logo2 {
+    height: 100px;
+  }
+
+  .episodios2 iframe {
+    height: 250px;
+    width: 400px;
+  }
+
+  .eph2 {
+    font-size: 20px;
+  }
+
+  .ph2 {
+    font-size: 15px;
+  }
+
+  .youtube1 {
+    height: 250px;
+    width: 400px;
+  }
+
+  .youtube2 {
+    height: 250px;
+    width: 400px;
+  }
+
+  .youtube3 {
+    height: 250px;
+    width: 400px;
+  }
 }
-    .galeriabout{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
+@media screen and (max-width: 800px) {
+  nav li {
+    font-size: 12px;
+  }
+
+  .botonini1 {
+    padding: 10px;
+    margin-left: 70px;
+  }
+
+  .bannerini {
+    margin-top: 40px;
+  }
+
+  .bannerini p {
+    font-size: 12px;
+  }
+
+  .inicio {
+    height: 450px;
+  }
+
+  .inicio a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .videos a {
+    font-size: 12px;
+  }
+
+  .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+
+  .texsec1 {
+    padding-top: 20px;
+  }
+
+  .texsec1 p {
+    margin: 20px -20px;
+  }
+
+  .texsec1 a {
+    font-size: 12px;
+  }
+
+  .tituloini1 {
+    font-size: 30px;
+  }
+
+  .tituloini2 {
+    font-size: 30px;
+  }
+
+  .botonini3 {
+    font-size: 12px;
+  }
+
+  .tituloini3 {
+    font-size: 30px;
+  }
+
+  .tituloini3-1 {
+    font-size: 20px;
+  }
+
+  #episodios h2 {
+    font-size: 30px;
+  }
+
+  #episodios h2 {
+    font-size: 20px;
+  }
+
+  #episodios h1 {
+    font-size: 30px;
+  }
 }
-    .mlbabout{
-        height: 400px;
-        width: 300px;
+@media screen and (max-width: 650px) {
+  .inicio {
+    height: 500px;
+  }
+
+  .h3about1 {
+    font-size: 20px;
+  }
+
+  .h2about1 {
+    font-size: 30px;
+  }
+
+  .galeriabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mlbabout {
+    height: 350px;
+    width: 250px;
+    margin: 20px 20px;
+  }
+
+  .f1about {
+    height: 350px;
+    width: 250px;
+    margin: 20px 20px;
+  }
+
+  .nflabout {
+    height: 350px;
+    width: 250px;
+    margin: 20px 20px;
+  }
+
+  .secabout1 a {
+    font-size: 15px;
+  }
+
+  #about {
+    background-size: center;
+  }
+
+  #about h1 {
+    font-size: 30px;
+  }
+
+  .textoabout p {
+    font-size: 15px;
+  }
+
+  .imgabout {
+    height: 300px;
+    width: 300px;
+  }
+
+  .episodios2 iframe {
+    height: 170px;
+    width: 300px;
+  }
 }
-    .nflabout {
-        height: 400px;
-        width: 300px;
+@media screen and (max-width: 510px) {
+  .inicio {
+    height: 600px;
+  }
+
+  .youtube1 {
+    height: 150px;
+    width: 300px;
+  }
+
+  .youtube2 {
+    height: 150px;
+    width: 300px;
+  }
+
+  .youtube3 {
+    height: 150px;
+    width: 300px;
+  }
+
+  .header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-    .f1about {
-        height: 400px;
-        width: 300px;
-}
-}
-@media screen and (max-width: 899px){
-    .bannerini p{
-        font-size: 14px;
-    }
-    .botonini1{
-        margin-top: 10px;
-        margin-left: 100px;
-    }
-    .inicio a{
-        text-decoration: none;
-        font-size: 15px;
-    }
-    .bannerini{
-        width: 80%;
-        margin-top: 5px;
-    }
-    .inicio{
-        height: 350px;
-    }
-    #seccionpie h2{
-        font-size: 12px;
-    }
-    #seccionpie a{
-        font-size: 10px;
-    }
-    .logo2{
-        height: 100px;
-    }
-    .episodios2 iframe{
-        height: 250px;
-        width: 400px;
-    }
-    .eph2{
-        font-size: 20px;
-    }
-    .ph2{
-        font-size: 15px;
-    }
-    .youtube1{
-        height: 250px;
-        width: 400px;
-    }
-    .youtube2{
-        height: 250px;
-        width: 400px;
-    }
-    .youtube3{
-        height: 250px;
-        width: 400px;
-    }
-}
-@media screen and (max-width: 800px){
-    nav li{
-        font-size: 12px;
-    }
-    .botonini1{
-        padding: 10px;
-        margin-left: 70px;
-    }
-    .bannerini{
-        margin-top: 40px;
-    }
-    .bannerini p{
-            font-size: 12px;
-        }
-    .inicio{
-        height: 450px;
-    }
-    .inicio a{
-        text-decoration: none;
-        font-size: 12px;
-        }
-    .videos a{
-        font-size: 12px;
-    }
-    .sec1{
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        flex-direction: column;
-        padding: auto;
-    }
-    .texsec1{
-        padding-top: 20px;
-    }
-    .texsec1 p{
-        margin: 20px -20px;
-    }
-    .texsec1 a{
-        font-size: 12px;
-    }
-    .tituloini1{
-        font-size: 30px;
-    }
-    .tituloini2{
-        font-size: 30px;
-    }
-    .botonini3{
-        font-size: 12px;
-    }
-    .tituloini3{
-        font-size: 30px;
-    }
-    .tituloini3-1{
-        font-size: 20px;
-    }
-    #episodios h2{
-        font-size: 30px;
-    }
-    #episodios h2{
-        font-size: 20px;
-    }
-    #episodios h1{
-        font-size: 30px;
-    }
-    }
-@media screen and (max-width: 650px){
-    .inicio{
-        height: 500px;
-    }
-    .h3about1{
-        font-size: 20px;
-    }
-    .h2about1{
-        font-size: 30px;
-    }
-    .galeriabout{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .mlbabout{
-        height: 350px;
-        width: 250px;
-        margin: 20px 20px;
-    }
-    .f1about{
-        height: 350px;
-        width: 250px;
-        margin: 20px 20px;
-    }
-    .nflabout{
-        height: 350px;
-        width: 250px;
-        margin: 20px 20px;
-    }
-    .secabout1 a{
-        font-size: 15px;
-    }
-    #about {
-        background-size: center;
-    }
-    #about h1{
-        font-size: 30px;
-    }
-    .textoabout p{
-        font-size: 15px;
-    }
-    .imgabout{
-        height: 300px;
-        width: 300px;
-    }
-    .episodios2 iframe{
-        height: 170px;
-        width: 300px;
-    }
-}
-@media screen and (max-width: 510px){
-    .inicio{
-        height: 600px;
-    }
-    .youtube1{
-        height: 150px;
-        width: 300px;
-    }
-    .youtube2{
-        height: 150px;
-        width: 300px;
-    }
-    .youtube3{
-        height: 150px;
-        width: 300px;
-    }
-    .header{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
+
+/*# sourceMappingURL=style.css.map */

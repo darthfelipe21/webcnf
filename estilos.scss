@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+$botones-primario: (
+    color: white,
+    background-color: #C8102E,
+    border: 2px solid white,
+);
+
 $color1: #C8102E;
 $color2: white;
 $color3: black;
@@ -148,9 +154,9 @@ body{
     }
 }
 .botonini1{
-    color: $color2;
+    color: map-get($botones-primario, color);
     text-decoration: none;
-    background-color: $color1;
+    background-color: map-get($botones-primario, background-color);
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
@@ -159,37 +165,38 @@ body{
     margin-left: 220px;
     width: 150px;
     height: 40px;
-    border: 2px solid $color2;
-}
-.botonini1:hover{
-    color: $color3;
-    border: 2px solid $color1;
-    background-color: $color2;
+    border: map-get($botones-primario, border);
+    &:hover{
+        color: $color3;
+        border: 2px solid $color1;
+        background-color: $color2;
+    }
 }
 .aboutme1{
     background-image: url(./multimedia/layered-steps-haikei.svg);
     background-size: cover;
-}
+    }
 .tituloini1{
     color: $color3;
     text-align: center;
     margin-bottom: 50px;
     font-size: 35px;
-}
+    }
 .sec1{
     display: flex;
     justify-content: space-evenly;;
-}
+    }
 .imgsec1{
     width: 350px;
     height: 450px;
-}
+    }
 .texsec1{
     width: 45%;
     p{
         margin-bottom: 30px;
     }
-    a{
+}
+.extend{
         color: $color2;
         text-decoration: none;
         background-color: $color1;
@@ -197,11 +204,10 @@ body{
         font-size: 18px;
         border: solid 2px $color3;
         font-weight: 700;
-    }
-    a:hover{
-        color: $color3;
-        border: 2px solid $color1;
-        background-color: $color2;
+        &:hover{
+            color: $color3;
+            border: 2px solid $color1;
+            background-color: $color2;
     }
 }
 .backgroungrojo{
@@ -233,9 +239,9 @@ body{
 }
 .botonini3{
     display: flex;
-    color: $color2;
+    color: map-get($botones-primario, color);
     text-decoration: none;
-    background-color:$color1;
+    background-color:map-get($botones-primario, background-color);
     padding: 5px 20px;
     font-size: 18px;
     font-weight: 700;
@@ -245,12 +251,12 @@ body{
     height: 40px;
     align-items: center;
     justify-content: center;
-    border: 2px solid $color2;
-}
-.botonini3:hover{
-    color: $color3;
-    border: 2px solid $color1;
-    background-color: $color2;
+    border: map-get($botones-primario, border);
+    &:hover{
+        color: $color3;
+        border: 2px solid $color1;
+        background-color: $color2;
+    }
 }
 .youtube1{
     display: flex;
@@ -430,34 +436,32 @@ footer{
     align-content: center;
     margin-top: 50px;
 }
+
+@mixin sizes ($height, $width, $margin){
+    height: $height;
+    width: $width;
+    margin-top: $margin;
+}
+
 .mlbabout{
-    height: 400px;
-    width: 300px;
+    @include sizes (400px, 300px, auto)
 }
 .nflabout {
-    height: 400px;
-    width: 300px;
+    @include sizes (400px, 300px, auto)
 }
 .f1about {
-    height: 430px;
-    width: 330px;
-    margin-top: -15px;
+    @include sizes (430px, 330px, -15px)
 }
 .secabout1 {
     a{
+    @extend .extend;
     display: flex;
-    color: $color2;
-    text-decoration: none;
-    background-color: $color1;
-    padding: 5px 20px;
-    font-size: 18px;
     font-weight: 700;
     margin-left: 520px;
     width: 150px;
     height: 40px;
     align-items: center;
     justify-content: center;
-    border: 2px solid $color3;
     margin-top: 30px;
     }
     a:hover{
@@ -511,7 +515,6 @@ label{
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 .tiktok1{
     margin-top: 150px;
@@ -840,14 +843,14 @@ label{
     }
     .bannerini p{
         font-size: 12px;
-        }
+    }
     .inicio{
         height: 450px;
     }
     .inicio a{
         text-decoration: none;
         font-size: 12px;
-        }
+    }
     .videos a{
         font-size: 12px;
     }
