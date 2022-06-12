@@ -256,7 +256,7 @@ body {
   padding: 5px 20px;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 650px;
+  margin-left: 680px;
   margin-top: 30px;
   width: 150px;
   height: 40px;
@@ -327,7 +327,6 @@ body {
   height: 40px;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
 }
 .videos a:hover {
   color: #C8102E;
@@ -406,10 +405,10 @@ footer i {
   padding-top: 10px;
   line-height: 40px;
 }
-.rrsspie a {
+.rrsspie i {
   color: white;
 }
-.rrsspie a:hover {
+.rrsspie i:hover {
   color: #C8102E;
 }
 .rrsspie h2 {
@@ -538,18 +537,18 @@ label {
 
 .secvideos {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   justify-content: space-evenly;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .tiktok1 {
   margin-top: 150px;
-  box-shadow: 10px 10px;
 }
 
 .tiktok1:hover {
@@ -594,7 +593,7 @@ label {
 .episodios2 {
   background-color: #C8102E;
   text-align: center;
-  padding: 50px 200px 30px 200px;
+  padding: 50px 200px 20px 200px;
   line-height: 25px;
 }
 
@@ -610,6 +609,39 @@ label {
 
 .ph2 {
   color: white;
+}
+
+.vermasepi {
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #C8102E;
+  border: none;
+}
+
+.espacio {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: 145px;
+}
+
+.videos1 a {
+  color: white;
+  text-decoration: none;
+  background-color: #C8102E;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: calc(50% - 64px);
+  width: 150px;
+  height: 40px;
+  border: 2px solid white;
+}
+.videos1 a:hover {
+  color: black;
+  border: 2px solid #C8102E;
+  background-color: white;
 }
 
 @media screen and (max-width: 1400px) {
